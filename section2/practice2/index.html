@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RP2</title>
+    <style>
+        p > label {
+            display: block;
+        }
+
+        p {
+            margin-top: 15px;
+        }
+
+        fieldset {
+            border: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <p>
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="Your name" required>
+    </p>
+    <p>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Your email" required>
+    </p>
+    <p>
+    <fieldset>
+        <legend>Sex</legend>
+        <input id="male" type="radio" name="sex" value="male">
+        <label for="male">Male</label>
+
+        <input id="female" type="radio" name="sex" value="female">
+        <label for="female">Female</label>
+    </fieldset>
+    </p>
+    <p>
+    <fieldset>
+        <legend>Current status</legend>
+        <input id="student" type="checkbox" name="status" value="student">
+        <label for="student">Student</label>
+        <br>
+        <input id="employed" type="checkbox" name="status" value="employed">
+        <label for="employed">Employed</label>
+        <br>
+        <input id="unemployed" type="checkbox" name="status" value="unemployed">
+        <label for="unemployed">Unemployed</label>
+    </fieldset>
+    </p>
+    <p>
+        <label for="birthday">Birthday</label>
+        <input id="birthday" type="date" name="birthday">
+    </p>
+    <p>
+        <label for="skills">Skills and Technologies</label>
+        <select id="skills" name="skills" multiple size="11">
+            <optgroup label="Tech skills">
+                <option>HTMl</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+                <option>ASP.NET</option>
+                <option>PHP</option>
+            </optgroup>
+            <optgroup label="Soft skills">
+                <option>Time management</option>
+                <option>Proactivity</option>
+                <option>Teamwork</option>
+                <option>Leadership</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>
+        <label for="photo">Photo</label>
+        <input id="photo" type="file" name="photo" accept="image/*">
+    </p>
+    <p>
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" cols="30" rows="5"></textarea>
+    </p>
+    <p>
+        <button type="submit">Send</button>
+        <button type="reset">Reset</button>
+    </p>
+</form>
+</body>
+</html>
