@@ -1,0 +1,91 @@
+body {
+    min-width: 210mm;
+    margin: 0;
+    padding: 60px 60px 90px 90px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article {
+    margin-top: 60px;
+}
+
+a, abbr {
+    text-decoration: none;
+    color: darkorchid;
+    font-weight: 600;
+}
+
+nav a {
+    color: black;
+    font-weight: normal;
+}
+
+li {
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid gainsboro;
+    border-collapse: collapse;
+    padding: 15px 5px;
+}
+
+table {
+    margin-top: 30px;
+}
+
+hr {
+    border-top: 2px solid black;
+}
+
+pre {
+    background-color: gainsboro;
+    font-family: 'Courier New', monospace;
+    margin-left: 40px;
+    padding: 3px;
+    font-size: 15px;
+}
+
+span {
+    display: block;
+    margin: 20px 0;
+}
+
+.code {
+    display: block;
+    margin: 20px 0;
+    background-color: ghostwhite;
+    font-size: 15px;
+}
+
+#http_version th {
+    background-color: ghostwhite;
+}
+
+#response_statuses {
+    table-layout: fixed;
+    width: 100%
+}
+
+#response_statuses th:first-child {
+    width: 25%
+}
+
+.striped_table tr:nth-child(2n + 3) {
+    background-color: ghostwhite;
+}
+
+.note {
+    margin: 50px 0 0 0;
+}
+
+.text_under_image {
+    font-family: Calibri, sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+
+.c_image {
+    display: block;
+    margin: 0 auto;
+}
