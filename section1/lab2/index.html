@@ -86,13 +86,19 @@
 
         <h3 class="note">ПРИМЕЧАНИЕ</h3>
         <hr>
-        <strong>Версии HTTP</strong>
 
         <table id="http_version">
+            <caption>
+                <strong>Версии HTTP</strong>
+            </caption>
+
+            <thead>
             <tr>
                 <th>Год</th>
                 <th>HTTP версия</th>
             </tr>
+            </thead>
+            <tbody>
             <tr>
                 <td>1991</td>
                 <td>0.9</td>
@@ -109,6 +115,7 @@
                 <td>2015</td>
                 <td>2.0</td>
             </tr>
+            </tbody>
         </table>
         <hr>
     </article>
@@ -182,10 +189,13 @@
         </p>
 
         <table class="striped_table">
+            <thead>
             <tr>
                 <th>Метод</th>
                 <th>Назначение</th>
             </tr>
+            </thead>
+            <tbody>
             <tr>
                 <td>GET</td>
                 <td>Прочитать ресурс</td>
@@ -202,6 +212,7 @@
                 <td>DELETE</td>
                 <td>Удалить ресурс</td>
             </tr>
+            </tbody>
         </table>
 
         <p>
@@ -272,11 +283,14 @@
             </kbd>
         </p>
         <table class="striped_table">
+            <thead>
             <tr>
                 <th>Параметр</th>
                 <th>Пример</th>
                 <th>Назначение</th>
             </tr>
+            </thead>
+            <tbody>
             <tr>
                 <td>&lt;логин&gt;</td>
                 <td>mylogin</td>
@@ -304,7 +318,8 @@
             <tr>
                 <td>&lt;путь&gt;</td>
                 <td>/search</td>
-                <td>Путь до ресурса. В примере, форма поиска по Интернету. Это может быть HTML страницы или файл</td>
+                <td>Путь до ресурса. В примере, форма поиска по Интернету. Это может быть HTML страницы или файл
+                </td>
             </tr>
             <tr>
                 <td>&lt;параметры&gt;</td>
@@ -316,6 +331,7 @@
                 <td>results</td>
                 <td>Прокрутить страницу до элемента с id="results"</td>
             </tr>
+            </tbody>
         </table>
     </article>
     <hr>
@@ -359,7 +375,7 @@
             После стартовой строки следуют заголовки, а также тело ответа. Например:
         </p>
         <pre>
-<code>HTTP/1.1 200 OK
+<samp>HTTP/1.1 200 OK
 Server: nginx/1.2.1
 Date: Sat, 08 Mar 2014 22:53:46 GMT
 Content-Type: application/octet-stream
@@ -368,7 +384,7 @@ Last-Modified: Sat, 08 Mar 2014 22:53:30 GMT
 Connection: keep-alive
 Accept-Ranges: bytes
 
-Wisdom</code>
+Wisdom</samp>
 </pre>
 
         <p>
@@ -387,14 +403,14 @@ Wisdom</code>
             Смотрите сами:
         </p>
         <pre>
-<code>HTTP/1.1 302 Moved Temporarily
+<samp>HTTP/1.1 302 Moved Temporarily
 Server: nginx
 Date: Sat, 08 Mar 2014 22:29:53 GMT
 Content-Type: text/html
 Content-Length: 154
 Connection: keep-alive
 Keep-Alive: timeout=25
-Location: http://habrahabr.ru/users/alizar/</code>
+Location: http://habrahabr.ru/users/alizar/</samp>
 </pre>
         <pre>
 <code>&lt;html&gt;
