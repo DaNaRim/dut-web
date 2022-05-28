@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pz4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<input type="radio" id="all_time" name="time" checked>
+<label for="all_time">Будь який час</label>
+<br>
+<input type="radio" id="am_time" name="time">
+<label for="am_time">До обіду</label>
+<br>
+<input type="radio" id="pm_time" name="time">
+<label for="pm_time">Після обіду</label>
+
+<hr>
+
+<input type="radio" id="all_days" name="days" checked>
+<label for="all_days">Всі дні</label>
+<br>
+<input type="radio" id="weekends_days" name="days">
+<label for="weekends_days">Вихідні дні</label>
+
+<hr>
+
+<p>Виберіть рівень фахівця</p>
+
+<input type="radio" id="level_all" name="level" checked>
+<label for="level_all">Всі</label>
+<br>
+<input type="radio" id="level_1" name="level">
+<label for="level_1">1</label>
+<br>
+<input type="radio" id="level_2" name="level">
+<label for=level_2>2</label>
+<br>
+<input type="radio" id="level_3" name="level">
+<label for="level_3">3</label>
+<br>
+<input type="radio" id="level_4" name="level">
+<label for="level_4">4</label>
+<br>
+<input type="radio" id="level_5" name="level">
+<label for="level_5">5</label>
+<br>
+<input type="radio" id="level_80" name="level">
+<label for="level_80">80</label>
+
+<hr>
+
+<table>
+    <caption>Шарашкіна контора</caption>
+    <thead>
+    <tr>
+        <td>№</td>
+        <th>Спеціальність</th>
+        <th>ПІБ</th>
+        <th>Рівень фахівця</th>
+        <th>Номер кабінету</th>
+        <th>Години прийому</th>
+        <th>Працює по вихідним?</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="work_in_the_morning work_in_the_evening level_3">
+        <td>1</td>
+        <td>Спеціаліст</td>
+        <td>Сосиска Наталія Валеріївна</td>
+        <td>3</td>
+        <td>0</td>
+        <td>07:00-13:00</td>
+        <td>Ні</td>
+    </tr>
+    <tr class="weekends_yes work_in_the_morning work_in_the_evening level_4">
+        <td>2</td>
+        <td>Мега спеціаліст</td>
+        <td>Кровопійця Тамара Михайлівна</td>
+        <td>4</td>
+        <td>1</td>
+        <td>07:00-15:00</td>
+        <td>Так</td>
+    </tr>
+    <tr class="weekends_yes work_in_the_morning work_in_the_evening level_5">
+        <td>3</td>
+        <td>Ультра спеціаліст</td>
+        <td>Торбина Тамара Олександрівна</td>
+        <td>5</td>
+        <td>1</td>
+        <td>07:00-17:00</td>
+        <td>Так</td>
+    </tr>
+    <tr class="work_in_the_morning">
+        <td>4</td>
+        <td>Так собі спеціаліст</td>
+        <td>Трунов Євген Павлович</td>
+        <td>2</td>
+        <td>2</td>
+        <td>09:00-09:15</td>
+        <td>Ні</td>
+    </tr>
+    <tr class="weekends_yes work_in_the_morning work_in_the_evening level_80">
+        <td>5</td>
+        <td>Спеціаліст 80-го рівня</td>
+        <td>Пацан Катерина Віталіївна</td>
+        <td>80</td>
+        <td>3</td>
+        <td>00:00-24:00</td>
+        <td>Так</td>
+    </tr>
+    <tr class=" work_in_the_morning work_in_the_evening level_2">
+        <td>6</td>
+        <td>Наче спеціаліст</td>
+        <td>Карась Тетяна Леонідівна</td>
+        <td>2</td>
+        <td>5</td>
+        <td>07:07-12:12</td>
+        <td>Ні</td>
+    </tr>
+    <tr class="work_in_the_evening level_2">
+        <td>7</td>
+        <td>Сказав, що спеціаліст</td>
+        <td>Зубенко Михайло Петрович</td>
+        <td>2</td>
+        <td>8</td>
+        <td>17:00-21:00</td>
+        <td>Ні</td>
+    </tr>
+    <tr class="weekends_yes work_in_the_morning level_3">
+        <td>8</td>
+        <td>Точно спеціаліст</td>
+        <td>Чесна Євгенія Миколаївна</td>
+        <td>3</td>
+        <td>13</td>
+        <td>05:00-11:00</td>
+        <td>Так</td>
+    </tr>
+    <tr class="weekends_yes work_in_the_morning level_4">
+        <td>9</td>
+        <td>Гіга спеціаліст</td>
+        <td>Блябляс Юлія Володимирівна</td>
+        <td>4</td>
+        <td>21</td>
+        <td>10:00-10:24</td>
+        <td>Так</td>
+    </tr>
+    <tr class="work_in_the_morning level_2">
+        <td>10</td>
+        <td>Мікро спеціаліст</td>
+        <td>Добрийвечір Олександр Михайлович</td>
+        <td>2</td>
+        <td>34</td>
+        <td>06:00-06:01</td>
+        <td>Ні</td>
+    </tr>
+    <tr class="weekends_yes work_in_the_morning work_in_the_evening level_1">
+        <td>11</td>
+        <td>Обіцяє бути спеціалістом</td>
+        <td>Худотеплий Валерій Андрійович</td>
+        <td>1</td>
+        <td>55</td>
+        <td>07:00-19:00</td>
+        <td>Так</td>
+    </tr>
+    <tr class="work_in_the_evening level_1">
+        <td>12</td>
+        <td>Агроном</td>
+        <td>Веселий Ростислав Адольфович</td>
+        <td>1</td>
+        <td>89</td>
+        <td>15:00-18:00</td>
+        <td>Ні</td>
+    </tr>
+    <tr class="work_in_the_evening level_1">
+        <td>13</td>
+        <td>Сам свого роду "спеціаліст"</td>
+        <td>Фундамент Микола Петрович</td>
+        <td>1</td>
+        <td>144</td>
+        <td>17:00-19:00</td>
+        <td>Ні</td>
+    </tr>
+    <tr class="work_in_the_morning work_in_the_evening level_5">
+        <td>14</td>
+        <td>
+            Електромонтажник із сигналізації, централізації та блокування
+            на залізничному транспорті й наземних лініях метрополітену
+        </td>
+        <td>Batman Bin Suparman</td>
+        <td>5</td>
+        <td>233</td>
+        <td>02:00-22:00</td>
+        <td>Ні</td>
+    </tr>
+    <tr class="work_in_the_evening level_2">
+        <td>15</td>
+        <td>Безрукий спеціаліст</td>
+        <td>Чесний Роб Банкс</td>
+        <td>2</td>
+        <td>377</td>
+        <td>12:00-18:00</td>
+        <td>Ні</td>
+    </tr>
+    </tbody>
+</table>
+
+<form action="#">
+    <label for="tel">Телефон</label>
+    <input type="tel" id="tel" placeholder="888 888 8888" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="yourEmail@example.com" required>
+
+    <input type="submit" id="btn" value="Надіслати дані на телефон">
+</form>
+</body>
+</html>

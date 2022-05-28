@@ -1,0 +1,119 @@
+body {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+table, td {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    border: 2px solid black;
+    position: relative;
+}
+
+caption {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+td:nth-child(2) {
+    width: 25%
+}
+
+th:nth-child(6) {
+    width: 80px;
+    min-width: 80px;
+}
+
+tbody tr:nth-of-type(2n + 1) {
+    background-color: #d7d7d7;
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 165, 0, 0.1);
+    transition: background-color ease 0.5s;
+}
+
+td:hover::after {
+    background-color: rgba(255, 165, 0, 0.1);
+    content: '';
+    height: 6000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: -1;
+}
+
+/*
+radio
+ */
+
+tbody > tr {
+    display: none;
+}
+
+#all_days:checked ~ * tbody > tr {
+    display: table-row;
+}
+
+#weekends_days:checked ~ * tbody > tr.weekends_yes {
+    display: table-row;
+}
+
+#all_time:checked + #all_days:not(:checked) ~ * tbody > tr {
+    display: table-row;
+}
+
+#am_time:checked ~ * tbody > tr:not(.work_in_the_morning),
+#pm_time:checked ~ * tbody > tr:not(.work_in_the_evening) {
+    display: none;
+}
+
+/*
+select
+ */
+
+#level_1:checked ~ * tbody > tr:not(.level_1),
+#level_2:checked ~ * tbody > tr:not(.level_2),
+#level_3:checked ~ * tbody > tr:not(.level_3),
+#level_4:checked ~ * tbody > tr:not(.level_4),
+#level_5:checked ~ * tbody > tr:not(.level_5),
+#level_80:checked ~ * tbody > tr:not(.level_80) {
+    display: none;
+}
+
+/*
+form
+ */
+
+form {
+    margin-top: 50px;
+    display: inline-block;
+}
+
+form > input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form > label {
+    display: block;
+    text-align: left;
+}
+
+#btn {
+    opacity: 0;
+}
+
+#tel:valid ~ #email:valid + #btn {
+    opacity: 1;
+    transition: 1s;
+}
