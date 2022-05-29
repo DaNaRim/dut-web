@@ -1,0 +1,128 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    color: rgb(40, 40, 40);
+    background: #f9f9f9;
+}
+
+header {
+    padding: 125px 20px 90px 20px;
+    text-align: center;
+    color: white;
+    background: url(images/header-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+header > h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 3.75em;
+    margin-bottom: 25px;
+}
+
+header > h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.125em;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+header > p {
+    font-size: 0.75em;
+}
+
+.subscribe {
+    display: table;
+    margin: 0 auto 10px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.subscribe input {
+    float: left;
+}
+
+.subscribe input[type="text"],
+.subscribe input[type="email"] {
+    font-size: 1em;
+    box-sizing: border-box;
+    width: 320px;
+    height: 50px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.subscribe input[type="submit"] {
+    font-size: 1.25em;
+    height: 50px;
+    padding: 10px 35px;
+    cursor: pointer;
+    color: #fff;
+    border: 0;
+    background: #ae2c52;
+}
+
+
+article {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+article > h1 {
+    font-size: 3em;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+article > p {
+    margin-bottom: 30px;
+}
+
+.image_left {
+    float: left;
+    margin: 0 30px 20px 0;
+}
+
+@media screen and (max-width: 950px) {
+    .subscribe input[type="text"],
+    .subscribe input[type="email"] {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .subscribe input[type="text"],
+    .subscribe input[type="email"] {
+        display: block;
+        float: none;
+        width: 320px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header {
+        padding: 30px 20px;
+    }
+
+    header > h1 {
+        font-size: 2.75em;
+        margin-bottom: 20px;
+    }
+
+    header > h2 {
+        font-size: 1.125em;
+        font-style: italic;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .subscribe input[type="text"],
+    .subscribe input[type="email"] {
+        width: 240px;
+    }
+}
